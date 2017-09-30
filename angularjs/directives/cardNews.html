@@ -1,0 +1,14 @@
+    <div class="col s12 m6 l6 xl4" ng-show="info.location==location2see">
+      <div class="card  card-div">
+        <div class="card-image">
+          <img ng-src="{{info.image}}">
+          <span class="card-title"><b>{{info.title}}</b></span>
+          <b>{{info.date | date}}</b>
+          <a target="_blank" ng-href="{{info.link}}" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">remove_red_eye</i></a>
+        </div>
+        <div class="card-content">
+          <b>{{info.medium | uppercase}}</b>
+          <p ng-bind-html="info.description"></p>
+        </div>
+      </div>
+    </div>
